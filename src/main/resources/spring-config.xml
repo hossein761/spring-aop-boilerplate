@@ -6,7 +6,10 @@
     <context:annotation-config />
     <context:component-scan base-package="nl.hossein.boilerplate"/>
 
-    <!--<bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />-->
+    <!--Enable aspects-->
+    <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" />
 
+    <!-- Aspects -->
+    <bean class="nl.hossein.boilerplate.SecurityServiceAspect" />
 
 </beans>

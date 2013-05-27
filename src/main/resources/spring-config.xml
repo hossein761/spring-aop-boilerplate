@@ -12,4 +12,7 @@
     <!-- Aspects -->
     <bean class="nl.hossein.boilerplate.SecurityServiceAspect" />
 
+    <!-- counter beans -->
+    <bean name = "securityCounter" class="nl.hossein.boilerplate.SecurityCounter" />
+
 </beans>
